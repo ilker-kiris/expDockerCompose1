@@ -10,6 +10,7 @@
 ## Example usage;
 # To build image of web and start 3 containers (-d is for detached deamon mode)
    docker-compose up -d
+
  NOTE above builds an image expdockercompose1_web, 
       then starts 3 containers using images; jwilder/nginx-proxy, expdockercompose1_web, redis
 
@@ -32,6 +33,7 @@
 
 # To decrease number of web containers to 2
    docker-compose scale web=2
+
  and watch the web containers reducing from 5 to 2 (watch via docker-compose ps) and in logs and in curl returned host name
 
 # To stop them(all 3 containers above started)
